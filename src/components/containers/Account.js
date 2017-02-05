@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import actions from '../../actions'
 
 class Account extends Component{
-  
+
   componentDidMount(){
     
     this.props.fetchCurrentUser()
@@ -28,7 +28,7 @@ class Account extends Component{
   logout(){
     this.props.logout()
   }
-  
+
 
   render(){
     return(
