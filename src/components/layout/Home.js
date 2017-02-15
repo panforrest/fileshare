@@ -1,19 +1,27 @@
 import React, { Component } from 'react'
 import { Account, Files, Profile, Profiles } from '../containers'
-import { ProfileLayout, ProfilesLayout} from '../layout'
+import { ProfileLayout, ProfilesLayout, ProfileStatic } from '../layout'
 import { Link } from 'react-router'
 
 class Home extends Component{
   render(){
     return(
-      <div>
-      	<h1>Home Layout</h1>
-        <Files />
-        <Account />
-        
-        <Link to='/profiles'>Profile</Link>
-        
-      </div>
+			<div id="wrapper">
+				<div id="main">
+					<div className="post">
+						<h1>Home Container</h1>
+						<Account /><br />
+						<br />
+						<Link to="/profile/">Profile</Link>
+						<br />
+						<Link to="/profile/">FFs ProfileStatic Layout</Link>
+					</div>
+					<br />
+					<div className="post">
+					  <Files />
+					</div>
+				</div>
+			</div>
     )
   }
 }

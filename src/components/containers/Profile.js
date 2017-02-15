@@ -1,25 +1,20 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import actions from '../../actions'
-
+import { ProfileStatic } from '../view'
 
 class Profile extends Component{
-	
 
 	componentDidMount(){
-	 console.log('PROFILE: '+JSON.stringify(this.props.params)) 
-    
+	 console.log('PROFILE: '+JSON.stringify(this.props.params))
 	}
-
-
 
   render(){
   	 const profile = this.props.profiles[this.props.params.id]
 
-    return (	
+    return (
       <div>
-
-      	<h2>{profile.firstName}'s files</h2><br />
+      	<h2>{profile.firstName}s files</h2><br />
       	<h3>{profile.email}</h3>
       	<div>
       		<ol>
@@ -29,6 +24,8 @@ class Profile extends Component{
       			<li>Fourth File</li>
       		</ol>
       	</div>
+
+				<ProfileStatic />
       </div>
     )
   }

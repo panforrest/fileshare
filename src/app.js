@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Home, ProfileLayout, ProfilesLayout } from './components/layout'
+
+import { Home, ProfileLayout, ProfilesLayout, ProfileStatic } from './components/layout'
 import { Profiles } from './components/containers'
 import { Provider } from 'react-redux'
 import store from './store'
@@ -12,8 +13,13 @@ const app = (
   <Provider store={store.configureStore()}>
     <Router history={browserHistory}>
       <Route path="/" component={Home} /><br />
+
       <Route path="/profile/:id" component={ProfileLayout} />
       <Route path="/profiles" component={Profiles} />
+
+			<Route path="/profile" component={ProfileLayout} />
+			<Route path="/profileStatic" component={ProfileStatic} />
+
     </Router>
   </Provider>
 )
