@@ -25,12 +25,49 @@ class Home extends Component {
 
 						<section id="intro">
 							<header>
-								<h2>shared files</h2>
+								<h2 style={{textAlign:'center'}}>shared files</h2>
 							</header>
 						</section>
 
 						<Link to="/profile/">Robs Profile</Link><br />
 						<Link to="/profile/"><strong>FFs Profile</strong></Link>
+						
+						<section>
+							<div className="mini-posts">
+								<article className="mini-post">
+									<header>
+										<h3><a href="#">Grandmothers Salsa Verde</a></h3>
+										<time className="published" datetime="2017-02-13">February 13, 2017</time>
+										<a href="#" className="author"><img src="/images/avatar.jpg" alt="" /></a>
+									</header>
+									<a href="#" className="image"><img src="/images/pic04.jpg" alt="" /></a>
+								</article>
+
+								<article className="mini-post">
+									<header>
+										<h3><a href="#">Vitae sed condimentum</a></h3>
+										<time className="published" datetime="2015-10-20">October 20, 2015</time>
+										<a href="#" className="author"><img src="/images/avatar.jpg" alt="" /></a>
+									</header>
+									<a href="#" className="image"><img src="/images/pic04.jpg" alt="" /></a>
+								</article>
+
+								<article className="mini-post">
+									<header>
+										<h3><a href="#">Vitae sed condimentum</a></h3>
+										<time className="published" datetime="2015-10-20">October 20, 2015</time>
+										<a href="#" className="author"><img src="/images/avatar.jpg" alt="" /></a>
+									</header>
+									<a href="#" className="image"><img src="/images/pic04.jpg" alt="" /></a>
+								</article>
+							</div>
+						</section>
+
+						<ul>
+							<li><Link to="/profile/">Robs Profile</Link></li><br />
+							<li><Link to="/profile/"><strong>FFs Profile</strong></Link></li>
+						</ul>
+
 					</div>
 				</div>
 
