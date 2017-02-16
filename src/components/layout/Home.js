@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD
 import { Files } from '../containers'
+=======
+import { Account, Files, Profile, Profiles } from '../containers'
+import { ProfileLayout, ProfilesLayout, ProfileStatic } from '../layout'
+>>>>>>> upstream/theme-future-imperfect
 import { Link } from 'react-router'
 
 class Home extends Component {
   render(){
     return(
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/theme-future-imperfect
 			<div id="wrapper">
 				<header id="header">
 					<h1><Link to="/">Fileshare</Link></h1>
@@ -22,6 +30,7 @@ class Home extends Component {
 
 				<div id="main">
 					<div className="post">
+<<<<<<< HEAD
 						<section id="intro">
 							<header>
 								<h2>shared files</h2>
@@ -29,6 +38,54 @@ class Home extends Component {
 						</section>
 						<Link to="/profile/">Robs Profile</Link><br />
 						<Link to="/profile/"><strong>FFs Profile</strong></Link>
+=======
+
+						<section id="intro">
+							<header>
+								<h2 style={{textAlign:'center'}}>shared files</h2>
+							</header>
+						</section>
+
+						<Link to="/profile/">Robs Profile</Link><br />
+						<Link to="/profile/"><strong>FFs Profile</strong></Link>
+						
+						<section>
+							<div className="mini-posts">
+								<article className="mini-post">
+									<header>
+										<h3><a href="#">Grandmothers Salsa Verde</a></h3>
+										<time className="published" datetime="2017-02-13">February 13, 2017</time>
+										<a href="#" className="author"><img src="/images/avatar.jpg" alt="" /></a>
+									</header>
+									<a href="#" className="image"><img src="/images/pic04.jpg" alt="" /></a>
+								</article>
+
+								<article className="mini-post">
+									<header>
+										<h3><a href="#">Vitae sed condimentum</a></h3>
+										<time className="published" datetime="2015-10-20">October 20, 2015</time>
+										<a href="#" className="author"><img src="/images/avatar.jpg" alt="" /></a>
+									</header>
+									<a href="#" className="image"><img src="/images/pic04.jpg" alt="" /></a>
+								</article>
+
+								<article className="mini-post">
+									<header>
+										<h3><a href="#">Vitae sed condimentum</a></h3>
+										<time className="published" datetime="2015-10-20">October 20, 2015</time>
+										<a href="#" className="author"><img src="/images/avatar.jpg" alt="" /></a>
+									</header>
+									<a href="#" className="image"><img src="/images/pic04.jpg" alt="" /></a>
+								</article>
+							</div>
+						</section>
+
+						<ul>
+							<li><Link to="/profile/">Robs Profile</Link></li><br />
+							<li><Link to="/profile/"><strong>FFs Profile</strong></Link></li>
+						</ul>
+
+>>>>>>> upstream/theme-future-imperfect
 					</div>
 				</div>
 
