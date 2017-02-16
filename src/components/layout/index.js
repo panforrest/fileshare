@@ -6,15 +6,8 @@ import AuthLayout from './AuthLayout'
 
 export{
   Home,
-<<<<<<< HEAD
-  ProfileLayout,
-	ProfileStatic,
-  AuthLayout
-=======
   ProfilesLayout,
-  ProfileLayout
-	ProfileStatic
+  ProfileLayout,
+  ProfileStatic,
   AuthLayout
-
->>>>>>> upstream/theme-future-imperfect
 }

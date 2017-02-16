@@ -1,21 +1,15 @@
 import React, { Component } from 'react'
-<<<<<<< HEAD
-=======
 import { connect } from 'react-redux'
 import actions from '../../actions'
 import { ProfileStatic } from '../view'
->>>>>>> upstream/theme-future-imperfect
 import { Link } from 'react-router'
 
 class Profile extends Component{
 
-<<<<<<< HEAD
-=======
 	componentDidMount(){
-	 console.log('PROFILE: '+JSON.stringify(this.props.params))
+		console.log('PROFILE: '+JSON.stringify(this.props.params))
 	}
 
->>>>>>> upstream/theme-future-imperfect
   render(){
 		const profile = this.props.profiles[this.props.params.id]
 
@@ -38,22 +32,18 @@ class Profile extends Component{
 					<h3>Selected File Rendered Below</h3>
 
 					<p style={{paddingBottom:40}}>Cornhole enamel pin selvage heirloom tofu gastropub chillwave pabst post-ironic, jianbing tbh woke food truck vinyl. Leggings scenester trust fund kickstarter, church-key XOXO iceland poutine deep v 8-bit. Helvetica keffiyeh edison bulb cronut subway tile austin flannel, 3 wolf moon chicharrones. Poutine enamel pin fam offal chicharrones quinoa kinfolk. Slow-carb flannel truffaut master cleanse, gluten-free dreamcatcher street art offal squid. Put a bird on it waistcoat keytar hella flexitarian. Echo park irony etsy roof party.</p>
-<<<<<<< HEAD
-=======
+
 					<p>FFs nonesense below:</p>
 					<ProfileStatic />
->>>>>>> upstream/theme-future-imperfect
 				</div>
 
 				<section id="sidebar">
 					<section id="intro">
 						<header>
-<<<<<<< HEAD
-							<h3>UserNames Files</h3>
-=======
+
 							<h3>{profile.firstName}</h3>
 							<h4>{profile.email}</h4>
->>>>>>> upstream/theme-future-imperfect
+
 						</header>
 					</section>
 					<section>

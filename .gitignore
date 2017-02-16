@@ -3,8 +3,5 @@
 /node_modules
 /public/theme/
 /public/build/
-<<<<<<< HEAD
-=======
 /src/config.js
->>>>>>> upstream/theme-future-imperfect
 /models/Profile.js
